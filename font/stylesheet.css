@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Alien Encounters Solid";
+  src: url("AlienEncountersSolidBold.woff2") format("woff2"),
+    url("AlienEncountersSolidBold.woff") format("woff"),
+    url("./font/Alien-Encounters-Solid-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
