@@ -181,3 +181,8 @@ header {
   border: 2px solid white;
   width: 200px;
 }
+@media screen and (max-width: 480px) {
+  .startText {
+    font-size: 3rem;
+  }
+}
