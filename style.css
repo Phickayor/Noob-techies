@@ -155,6 +155,7 @@ header {
   justify-content: center;
   padding: 1rem;
   margin: 0;
+  border-radius: 10px;
 }
 .introContent p {
   font-size: 2rem;
@@ -180,7 +181,11 @@ header {
   padding: 20px;
   margin: 20px;
   border: 2px solid white;
+  border-radius: 5px;
   width: 200px;
+}
+.paths p {
+  color: #fff;
 }
 @media screen and (max-width: 480px) {
   /* start text reduced for responsiveness */
