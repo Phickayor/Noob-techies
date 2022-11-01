@@ -161,6 +161,10 @@ header {
   font-size: 2rem;
   width: 50%;
 }
+.introContent img {
+  width: 50%;
+  border-radius: 10px;
+}
 /*Paths section start*/
 .pathsHead {
   color: white;
@@ -186,6 +190,21 @@ header {
 }
 .paths p {
   color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .introContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .introContent p {
+    text-align: center;
+    width: 100%;
+    order: 1;
+  }
+  .introContent img {
+    align-self: center;
+  }
 }
 @media screen and (max-width: 480px) {
   /* start text reduced for responsiveness */
