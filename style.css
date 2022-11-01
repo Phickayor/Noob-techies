@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
   transform: translateY(0.8rem) translateX(0.5rem) rotate(90deg);
 }
 .hamBurger.change .bar2 {
-  transform: rotate(-50deg) translateX(-0.5rem) translateY(-0.2rem);
+  transform: rotate(50deg) translateX(-0.2rem) translateY(0.3rem);
   width: 2.5rem;
 }
 .hamBurger.change .bar3 {
