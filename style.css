@@ -68,7 +68,7 @@ header {
   position: sticky;
   top: 0;
   background: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(0.094rem);
+  backdrop-filter: blur(1.094rem);
   -webkit-backdrop-filter: blur(0.094rem);
 }
 
@@ -91,14 +91,14 @@ header {
   top: 50%;
   left: 6%;
 
-  animation: blues infinite 8s;
+  animation: blues infinite 3s;
 }
 
 .green {
   background: linear-gradient(180deg, #39ff65 0%, rgba(0, 0, 0, 0) 100%);
   filter: blur(25px);
   right: 6%;
-  animation: greens infinite 8s;
+  animation: greens infinite 3s;
 }
 /*Balls animation reduced for responsiveness was exceeding page height*/
 @keyframes blues {
@@ -145,25 +145,33 @@ header {
 }
 /*Introduction section start*/
 .introSection {
-  padding: 30px;
+  padding: 1.875rem;
   display: flex;
   justify-content: center;
 }
 .introContent {
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 5rem;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   margin: 0;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
+
 .introContent p {
-  font-size: 2rem;
+  font-size: 4rem;
   width: 50%;
 }
-.introContent img {
-  width: 50%;
-  border-radius: 10px;
+.introContent .img {
+  width: 30rem;
+  height: 27rem;
+  border-radius: 0.625rem;
+  background-image: url("./images/nft\ pc\ view.png");
+  background-size: cover;
+  background-position: center;
 }
 /*Paths section start*/
 .pathsHead {
@@ -171,27 +179,41 @@ header {
   text-align: center;
 }
 .pathSection {
-  padding: 30px;
+  padding: 1.875rem;
   display: flex;
   justify-content: center;
 }
 .paths {
-  padding: 30px;
+  padding: 1.875rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .paths div {
-  padding: 20px;
-  margin: 20px;
-  border: 2px solid white;
-  border-radius: 5px;
-  width: 200px;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  border: 0.125rem solid white;
+  border-radius: 0.3125rem;
+  width: 12.5rem;
 }
 .paths p {
   color: #fff;
+  text-align: center;
+}
+.paths img {
+  border-radius: 0.625rem;
+  width: 100%;
 }
 @media screen and (max-width: 500px) {
+  body {
+    background: linear-gradient(
+      241.4deg,
+      #da3636 20.91%,
+      #ed6c74 46.79%,
+      #9925b5 76.82%,
+      #690be6 90.35%
+    );
+  }
   .introContent {
     display: flex;
     flex-direction: column;
@@ -201,9 +223,14 @@ header {
     text-align: center;
     width: 100%;
     order: 1;
+    font-size: 1.25rem;
   }
-  .introContent img {
+  .introContent .img {
     align-self: center;
+    background-image: url("./images/nft\ mobile\ view.png");
+    width: 60.24%;
+    height: 8rem;
+    margin-bottom: 1.2rem;
   }
 }
 @media screen and (max-width: 480px) {

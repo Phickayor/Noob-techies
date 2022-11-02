@@ -9,8 +9,6 @@
     <link rel="icon" href="./images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./font/stylesheet.css" />
-
-    <script defer src="./app.js"></script>
   </head>
   <body>
     <header>
@@ -30,7 +28,7 @@
 
     <main class="main">
       <section class="startText">
-        <p>
+        <p class="p">
           COMMUNITY FOR <br />
           WEB3.0
         </p>
@@ -39,7 +37,8 @@
     <section class="introSection">
       <div class="introContent">
         <p>BUILDING A NETWORK WHERE EVERYONE PLAYS A ROLE IN WEB 3</p>
-        <img src="" alt="networking-image" />
+        <!--I plan on putting all images as div backgrounds, so that It will possible to change the images on mobile-->
+        <div class="img" alt="networking-image"></div>
       </div>
     </section>
     <div class="pathsHeadDiv">
@@ -48,22 +47,37 @@
     <section class="pathSection">
       <div class="paths">
         <div>
-          <img src="" alt="path1" />
+          <img src="./images/NFT DRAWING.png" alt="path1" />
           <p>NFT DRAWING</p>
         </div>
         <div>
-          <img src="" alt="path2" />
-          <p>BLOCKCHAIN DEVELOPMENT</p>
+          <img src="./images/BLOCKCHAIN DEV.png" alt="path2" />
+          <p>BLOCKCHAIN <br />DEVELOPMENT</p>
         </div>
         <div>
-          <img src="" alt="path3" />
-          <p>NFT DRAWING</p>
+          <img src="./images/COMMUNITY.png" alt="path3" />
+          <p>COMMUNITY <br />MANAGEMENT</p>
         </div>
         <div>
-          <img src="" alt="path4" />
-          <p>NFT DRAWING</p>
+          <img src="./images/FULLSTACK.png" alt="path4" />
+          <p>FULLSTACK <br />DEVELOPMENT</p>
+        </div>
+
+        <div>
+          <img src="./images/UIUX.png" alt="path5" />
+          <p>UI/UX <br />DESIGN</p>
+        </div>
+        <div>
+          <img src="./images/TECHNICAL.png" alt="path6" />
+          <p>TECHNICAL <br />WRITING</p>
         </div>
       </div>
     </section>
+
+    <!--GSAP CDN for some animation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
