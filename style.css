@@ -325,11 +325,11 @@ footer {
 }
 .socials {
   display: flex;
-  column-gap: 1.25rem;
 }
 .img {
   width: 3.6rem;
   height: 3.8rem;
+  margin-right: 1.25rem;
 }
 @media screen and (max-width: 500px) {
   body {
@@ -441,11 +441,11 @@ footer {
     transform: translateY(130%);
     transition: 0.2s;
     transition-timing-function: ease-in;
-    column-gap: 2%;
   }
   .socials .img {
     width: 80%;
     height: 80%;
+    margin-right: 2%;
   }
   .socials {
     display: none;
