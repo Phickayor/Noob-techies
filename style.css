@@ -22,6 +22,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
@@ -63,7 +64,8 @@ body::-webkit-scrollbar {
 .hamBurger3 {
   position: absolute;
   bottom: 1.2rem;
-  right: -100%;
+  right: 0.5rem;
+  transform: translateX(-100000%);
 }
 
 .hamBurger3 .bar7 {
@@ -340,6 +342,124 @@ footer {
   margin-right: 1.25rem;
 }
 
+/*the community page styling*/
+.MainC {
+  width: 100%;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+}
+.joinUs {
+  width: 100%;
+  height: 20rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  padding-top: 5%;
+  margin-bottom: 4rem;
+}
+.joinUs p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 101.5%;
+  background: linear-gradient(180deg, #d33030 0%, #5200ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.dogs {
+  width: 56%;
+  height: 16rem;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  margin-top: 8%;
+  border-radius: 0.625rem;
+}
+.joinBtn2 {
+  width: 20%;
+  height: 5rem;
+  background: #000000;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 40%;
+  top: 0;
+  margin-top: 40%;
+  transition: 0.5s;
+}
+.joinBtn2:hover {
+  transform: rotate(360deg);
+}
+.joinBtn2 p {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 101.5%;
+  background: linear-gradient(115.72deg, #d33030 -23.35%, #5200ff 66.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.soc img {
+  width: 3.6rem;
+  height: 3.8rem;
+}
+.imgs {
+  margin-right: 2rem;
+}
+
+.socialsWhite {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*menu items*/
+nav {
+  position: fixed;
+  left: -1000%;
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  box-shadow: 0 0.5rem 2rem 0 rgba(31, 38, 135, 0.37);
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(1.094rem);
+  -webkit-backdrop-filter: blur(0.094rem);
+  gap: 0;
+  top: 4.4rem;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  padding-top: 0;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+nav.cleek {
+  left: 0;
+}
+
+nav div {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: white;
+  transition: 0.5s;
+}
+nav div:hover {
+  color: #720f52;
+}
 @media screen and (max-width: 500px) {
   body {
     background: linear-gradient(
@@ -349,7 +469,8 @@ footer {
       #9925b5 76.82%,
       #690be6 90.35%
     );
-
+    width: 100vw;
+    overflow-x: hidden;
     position: relative;
   }
   .introContent {
@@ -477,12 +598,31 @@ footer {
     opacity: 1;
   }
   .hamBurger3.change {
-    right: 0.5rem;
+    transform: translateX(0);
     transition-timing-function: ease-out;
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
     cursor: pointer;
   }
+
+  .dogs {
+    display: none;
+  }
+  .joinBtn2 {
+    position: static;
+    width: 60%;
+    margin: 0;
+    margin-left: 20%;
+    margin-bottom: 4%;
+  }
+  .joinUs {
+    margin-bottom: 2%;
+    height: auto;
+  }
+  .joinUs p {
+    font-size: 192%;
+  }
 }
+
 @media screen and (max-width: 480px) {
   /* start text reduced for responsiveness */
   .startText {

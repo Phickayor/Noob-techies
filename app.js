@@ -34,9 +34,11 @@ const burger = document.querySelector(".hamBurger");
 const burger2 = document.querySelector(".hamBurger2");
 const burger3 = document.querySelector(".hamBurger3");
 const socialTab = document.querySelector(".socials");
+const nav = document.querySelector("nav");
 
 burger.addEventListener("click", function () {
   burger.classList.toggle("change");
+  nav.classList.toggle("cleek");
 });
 
 burger2.addEventListener("click", function () {
