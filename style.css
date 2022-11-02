@@ -329,8 +329,17 @@ footer {
 .img {
   width: 3.6rem;
   height: 3.8rem;
+}
+.img:nth-child(1) {
   margin-right: 1.25rem;
 }
+.img:nth-child(2) {
+  margin-right: 1.25rem;
+}
+.img:nth-child(3) {
+  margin-right: 1.25rem;
+}
+
 @media screen and (max-width: 500px) {
   body {
     background: linear-gradient(
@@ -445,6 +454,14 @@ footer {
   .socials .img {
     width: 80%;
     height: 80%;
+  }
+  .img:nth-child(1) {
+    margin-right: 2%;
+  }
+  .img:nth-child(2) {
+    margin-right: 2%;
+  }
+  .img:nth-child(3) {
     margin-right: 2%;
   }
   .socials {
