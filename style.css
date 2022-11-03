@@ -393,11 +393,8 @@ footer {
   left: 40%;
   top: 0;
   margin-top: 40%;
-  transition: 0.5s;
 }
-.joinBtn2:hover {
-  transform: rotate(360deg);
-}
+
 .joinBtn2 p {
   margin: 0;
   padding: 0;
